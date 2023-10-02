@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <style>
+       
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        :root {
+            --primary-color: #007BFF;
+            --secondary-color: #343A40;
+            --text-color: #333;
+            --bg-color: #F8F9FA;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
+            
+            float: center;
+        }
+
+        header h3 {
+            font-size: 26px;
+            margin:0%;
+            
+        }
+
+        
+        nav {
+            text-align: right;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            text-align: center;
+        }
+
+       
+        .hero {
+            background-image: url("https://ak0.picdn.net/shutterstock/videos/20344780/thumb/1.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            background-size: cover;
+            text-align: center;
+            padding: 100px 0;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        
+        .book-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .book-item {
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            width: calc(33.33% - 20px);
+        }
+        .book{
+            height: 300px;
+            width:250px;
+        }
+        .section2{
+             padding: 73px;
+        }
+
+        .section2 h1{
+            font-size: 2.3rem;
+        }
+
+        .section2 p{
+            padding: 0 8vw;
+            text-align: center;
+        }
+        
+        .box{
+            padding: 8px 0;
+            margin: 12px 22px;
+            min-width: 20vw;
+            border: 2px solid rgb(120, 54, 16);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .box h2{
+            font-size: 2rem;
+            padding: 15px 0;
+        }
+
+        .highlighted{
+            font-size: 1.2rem;
+            font-weight: bolder;
+        }
+
+        .box ul{
+            list-style-type: none;
+        }
+
+        .box ul li{
+            margin: 12px 2px;
+        }
+        .section-4{
+            padding:35px;
+        }
+  
+        .brand{
+            width: 20%;
+            display: inline;
+        }
+
+        .brand img{
+            height: 175px;
+        }
+
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body background-color="">
+    <header>
+        <nav>
+            <a href="landing page.html">Home</a>
+            <a href="#">Books</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <h3>Online Book Store</h3>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Our Bookstore</h2>
+        <p>Discover a world of knowledge through our extensive collection of books.</p>
+        <button>Explore Now</button>
+    </section>
+
+    <section class="book-list">
+        <div class="book-item">
+            <img class="book" src="book1.jpg" alt="Book 1">
+            <h3>Solar Bones</h3>
+            <p>Mike  MC Carmack</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="book-item">
+            <img class="book" src="book2.jpg" alt="Book 2">
+            <h3>The House on the Lake</h3>
+            <p>Nuala Ellwood</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="book-item">
+            <img class="book" src="book3.jpg" alt="Book 3">
+            <h3>The Girl in the Letter</h3>
+            <p>Emily Gunnis</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="book-item">
+            <img class="book" src="book4.jpg" alt="Book 4">
+            <h3>Darkest Before the Dawn</h3>
+            <p>Michael Anderle &
+                Ell Leigh Clarke
+            </p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+    <section class="section2">
+        <h1 class="text-center my-2">Pricing</h1>
+        
+        <div class="boxes flex justify-center">
+            <div class="box">
+                <h2>Free</h2>
+                <ul>
+                    <li class="highlighted">₹0/month</li>
+                    <li>0 users included</li>
+                    <li>2 GB of storage</li>
+                    <li>Email support</li>
+                    <li>Help center access</li>
+                    <li><button class="btn">Signup Now</button></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Pro</h2>
+                <ul>
+                    <li class="highlighted">₹750/month</li>
+                    <li>0 users included</li>
+                    <li>2 GB of storage</li>
+                    <li>Email support</li>
+                    <li>Help center access</li>
+                    <li><button class="btn">Signup Now</button></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Enterprise</h2>
+                <ul>
+                    <li class="highlighted">₹1000/month</li>
+                    <li>0 users included</li>
+                    <li>2 GB of storage</li>
+                    <li>Email support</li>
+                    <li>Help center access</li>
+                    <li><button class="btn">Signup Now</button></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <section class="section-4">
+        <h2>Featured Brands</h2>
+        <div class="brand">
+            <img src="book_logo1.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="book_logo_6.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="book_logo3.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="book_logo2.jpg" alt="">
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Online Book Store. All rights reserved.
+    </footer>
+</body>
+</html>
